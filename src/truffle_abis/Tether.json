@@ -65,22 +65,22 @@
   "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/Tether.sol\":\"Tether\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/Tether.sol\":{\"keccak256\":\"0x34ef1a3c830b6e4f360674262724e59321ccf44f258d0637cd3b73ee654bd111\",\"urls\":[\"bzz-raw://bb288d64bf10cf7c40b989e9de4886d4d846caf9d50e6434b6480670d67aaade\",\"dweb:/ipfs/QmZuafzZbqU9C5yexaXW7hVN6STwkozwcwERsJwFVGHTWk\"]}},\"version\":1}",
   "bytecode": "0x60806040526040518060400160405280601181526020017f4d6f636b2054657468657220746f6b656e0000000000000000000000000000008152506000908051906020019061004f9291906100d8565b506040518060400160405280600581526020017f6d555344540000000000000000000000000000000000000000000000000000008152506001908051906020019061009b9291906100d8565b5069d3c21bcecceda10000006002556012600360006101000a81548160ff021916908360ff1602179055503480156100d257600080fd5b5061017d565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061011957805160ff1916838001178555610147565b82800160010185558215610147579182015b8281111561014657825182559160200191906001019061012b565b5b5090506101549190610158565b5090565b61017a91905b8082111561017657600081600090555060010161015e565b5090565b90565b6103238061018c6000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806306fdde031461005157806318160ddd146100d4578063313ce567146100f257806395d89b4114610116575b600080fd5b610059610199565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610237565b6040518082815260200191505060405180910390f35b6100fa61023d565b604051808260ff1660ff16815260200191505060405180910390f35b61011e610250565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561015e578082015181840152602081019050610143565b50505050905090810190601f16801561018b5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561022f5780601f106102045761010080835404028352916020019161022f565b820191906000526020600020905b81548152906001019060200180831161021257829003601f168201915b505050505081565b60025481565b600360009054906101000a900460ff1681565b60018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102e65780601f106102bb576101008083540402835291602001916102e6565b820191906000526020600020905b8154815290600101906020018083116102c957829003601f168201915b50505050508156fea265627a7a7231582065ac68155f813a250930373371812712c9d6584a71d049b6f84050eebe15c28364736f6c63430005110032",
   "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806306fdde031461005157806318160ddd146100d4578063313ce567146100f257806395d89b4114610116575b600080fd5b610059610199565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610237565b6040518082815260200191505060405180910390f35b6100fa61023d565b604051808260ff1660ff16815260200191505060405180910390f35b61011e610250565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561015e578082015181840152602081019050610143565b50505050905090810190601f16801561018b5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561022f5780601f106102045761010080835404028352916020019161022f565b820191906000526020600020905b81548152906001019060200180831161021257829003601f168201915b505050505081565b60025481565b600360009054906101000a900460ff1681565b60018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102e65780601f106102bb576101008083540402835291602001916102e6565b820191906000526020600020905b8154815290600101906020018083116102c957829003601f168201915b50505050508156fea265627a7a7231582065ac68155f813a250930373371812712c9d6584a71d049b6f84050eebe15c28364736f6c63430005110032",
-  "sourceMap": "27:217:1:-;;;50:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;97:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;163:25;134:54;;238:2;214:26;;;;;;;;;;;;;;;;;;;;27:217;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:217:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "27:217:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:217:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;50:40;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;50:40:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;134:54;;;:::i;:::-;;;;;;;;;;;;;;;;;;;214:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;97:30;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;97:30:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;50:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;134:54::-;;;;:::o;214:26::-;;;;;;;;;;;;;:::o;97:30::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "sourceMap": "27:217:2:-;;;50:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;97:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;163:25;134:54;;238:2;214:26;;;;;;;;;;;;;;;;;;;;27:217;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:217:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "27:217:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:217:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;50:40;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;50:40:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;134:54;;;:::i;:::-;;;;;;;;;;;;;;;;;;;214:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;97:30;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;97:30:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;50:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;134:54::-;;;;:::o;214:26::-;;;;;;;;;;;;;:::o;97:30::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Tether {\r\n    string public name = \"Mock Tether token\";\r\n    string public symbol = \"mUSDT\";\r\n    uint256 public totalSupply = 1000000000000000000000000; //1 million tokens\r\n    uint8 public decimals = 18;\r\n}\r\n",
   "sourcePath": "D:\\Github\\defi-staking-app\\src\\contracts\\Tether.sol",
   "ast": {
     "absolutePath": "project:/src/contracts/Tether.sol",
     "exportedSymbols": {
       "Tether": [
-        71
+        89
       ]
     },
-    "id": 72,
+    "id": 90,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 58,
+        "id": 76,
         "literals": [
           "solidity",
           "^",
@@ -88,7 +88,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:1"
+        "src": "0:23:2"
       },
       {
         "baseContracts": [],
@@ -96,20 +96,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 71,
+        "id": 89,
         "linearizedBaseContracts": [
-          71
+          89
         ],
         "name": "Tether",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 61,
+            "id": 79,
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 71,
-            "src": "50:40:1",
+            "scope": 89,
+            "src": "50:40:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -117,10 +117,10 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 59,
+              "id": 77,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "50:6:1",
+              "src": "50:6:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -129,14 +129,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "4d6f636b2054657468657220746f6b656e",
-              "id": 60,
+              "id": 78,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "string",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "71:19:1",
+              "src": "71:19:2",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_stringliteral_701586e67bb3562d5847e9d4968769f957af3876d820f1c0b29faae734be8421",
@@ -148,11 +148,11 @@
           },
           {
             "constant": false,
-            "id": 64,
+            "id": 82,
             "name": "symbol",
             "nodeType": "VariableDeclaration",
-            "scope": 71,
-            "src": "97:30:1",
+            "scope": 89,
+            "src": "97:30:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -160,10 +160,10 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 62,
+              "id": 80,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "97:6:1",
+              "src": "97:6:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -172,14 +172,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "6d55534454",
-              "id": 63,
+              "id": 81,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "string",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "120:7:1",
+              "src": "120:7:2",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_stringliteral_87d6c88746910d1d723ba1a6428a07b8455502c6f47d344b272b350e2394614c",
@@ -191,11 +191,11 @@
           },
           {
             "constant": false,
-            "id": 67,
+            "id": 85,
             "name": "totalSupply",
             "nodeType": "VariableDeclaration",
-            "scope": 71,
-            "src": "134:54:1",
+            "scope": 89,
+            "src": "134:54:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -203,10 +203,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 65,
+              "id": 83,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "134:7:1",
+              "src": "134:7:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -215,14 +215,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "31303030303030303030303030303030303030303030303030",
-              "id": 66,
+              "id": 84,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "163:25:1",
+              "src": "163:25:2",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_1000000000000000000000000_by_1",
@@ -234,11 +234,11 @@
           },
           {
             "constant": false,
-            "id": 70,
+            "id": 88,
             "name": "decimals",
             "nodeType": "VariableDeclaration",
-            "scope": 71,
-            "src": "214:26:1",
+            "scope": 89,
+            "src": "214:26:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -246,10 +246,10 @@
               "typeString": "uint8"
             },
             "typeName": {
-              "id": 68,
+              "id": 86,
               "name": "uint8",
               "nodeType": "ElementaryTypeName",
-              "src": "214:5:1",
+              "src": "214:5:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint8",
                 "typeString": "uint8"
@@ -258,14 +258,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3138",
-              "id": 69,
+              "id": 87,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "238:2:1",
+              "src": "238:2:2",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_18_by_1",
@@ -276,18 +276,18 @@
             "visibility": "public"
           }
         ],
-        "scope": 72,
-        "src": "27:217:1"
+        "scope": 90,
+        "src": "27:217:2"
       }
     ],
-    "src": "0:246:1"
+    "src": "0:246:2"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "project:/src/contracts/Tether.sol",
       "exportedSymbols": {
         "Tether": [
-          71
+          89
         ]
       }
     },
@@ -301,9 +301,9 @@
             ".0"
           ]
         },
-        "id": 58,
+        "id": 76,
         "name": "PragmaDirective",
-        "src": "0:23:1"
+        "src": "0:23:2"
       },
       {
         "attributes": {
@@ -317,17 +317,17 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            71
+            89
           ],
           "name": "Tether",
-          "scope": 72
+          "scope": 90
         },
         "children": [
           {
             "attributes": {
               "constant": false,
               "name": "name",
-              "scope": 71,
+              "scope": 89,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "string",
@@ -339,9 +339,9 @@
                   "name": "string",
                   "type": "string"
                 },
-                "id": 59,
+                "id": 77,
                 "name": "ElementaryTypeName",
-                "src": "50:6:1"
+                "src": "50:6:2"
               },
               {
                 "attributes": {
@@ -356,20 +356,20 @@
                   "type": "literal_string \"Mock Tether token\"",
                   "value": "Mock Tether token"
                 },
-                "id": 60,
+                "id": 78,
                 "name": "Literal",
-                "src": "71:19:1"
+                "src": "71:19:2"
               }
             ],
-            "id": 61,
+            "id": 79,
             "name": "VariableDeclaration",
-            "src": "50:40:1"
+            "src": "50:40:2"
           },
           {
             "attributes": {
               "constant": false,
               "name": "symbol",
-              "scope": 71,
+              "scope": 89,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "string",
@@ -381,9 +381,9 @@
                   "name": "string",
                   "type": "string"
                 },
-                "id": 62,
+                "id": 80,
                 "name": "ElementaryTypeName",
-                "src": "97:6:1"
+                "src": "97:6:2"
               },
               {
                 "attributes": {
@@ -398,20 +398,20 @@
                   "type": "literal_string \"mUSDT\"",
                   "value": "mUSDT"
                 },
-                "id": 63,
+                "id": 81,
                 "name": "Literal",
-                "src": "120:7:1"
+                "src": "120:7:2"
               }
             ],
-            "id": 64,
+            "id": 82,
             "name": "VariableDeclaration",
-            "src": "97:30:1"
+            "src": "97:30:2"
           },
           {
             "attributes": {
               "constant": false,
               "name": "totalSupply",
-              "scope": 71,
+              "scope": 89,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -423,9 +423,9 @@
                   "name": "uint256",
                   "type": "uint256"
                 },
-                "id": 65,
+                "id": 83,
                 "name": "ElementaryTypeName",
-                "src": "134:7:1"
+                "src": "134:7:2"
               },
               {
                 "attributes": {
@@ -440,20 +440,20 @@
                   "type": "int_const 1000000000000000000000000",
                   "value": "1000000000000000000000000"
                 },
-                "id": 66,
+                "id": 84,
                 "name": "Literal",
-                "src": "163:25:1"
+                "src": "163:25:2"
               }
             ],
-            "id": 67,
+            "id": 85,
             "name": "VariableDeclaration",
-            "src": "134:54:1"
+            "src": "134:54:2"
           },
           {
             "attributes": {
               "constant": false,
               "name": "decimals",
-              "scope": 71,
+              "scope": 89,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint8",
@@ -465,9 +465,9 @@
                   "name": "uint8",
                   "type": "uint8"
                 },
-                "id": 68,
+                "id": 86,
                 "name": "ElementaryTypeName",
-                "src": "214:5:1"
+                "src": "214:5:2"
               },
               {
                 "attributes": {
@@ -482,24 +482,24 @@
                   "type": "int_const 18",
                   "value": "18"
                 },
-                "id": 69,
+                "id": 87,
                 "name": "Literal",
-                "src": "238:2:1"
+                "src": "238:2:2"
               }
             ],
-            "id": 70,
+            "id": 88,
             "name": "VariableDeclaration",
-            "src": "214:26:1"
+            "src": "214:26:2"
           }
         ],
-        "id": 71,
+        "id": 89,
         "name": "ContractDefinition",
-        "src": "27:217:1"
+        "src": "27:217:2"
       }
     ],
-    "id": 72,
+    "id": 90,
     "name": "SourceUnit",
-    "src": "0:246:1"
+    "src": "0:246:2"
   },
   "compiler": {
     "name": "solc",
@@ -509,13 +509,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xBfc8f5DcB05d12AE6b85F5E680DF9046bB68A42b",
-      "transactionHash": "0xd66e6594c6d14bc083f70d6e4bec6f46228b9849e50fd3fccb98185c2239d9e4"
+      "address": "0xd396F80c0907f7b86ca29427d1aD0D0eb32a317B",
+      "transactionHash": "0x357e46ff42a4417e2b8b0caad5f9f08873438e47546b3920d76ac5e225d3220a"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-11-11T11:51:57.442Z",
-  "networkType": "ethereum",
+  "updatedAt": "2021-11-12T06:36:36.211Z",
   "devdoc": {
     "methods": {}
   },
