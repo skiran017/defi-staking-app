@@ -16,3 +16,6 @@ Make sure truggle -g is installed
    to access truffle console
    tether = await Tether.new()
    tether.name() // this will give the assigned name of your Tether
+
+6. Reward script
+   truffle exec scripts/issue-tokens.js
