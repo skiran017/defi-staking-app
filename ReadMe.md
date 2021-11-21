@@ -19,3 +19,5 @@ Make sure truggle -g is installed
 
 6. Reward script
    truffle exec scripts/issue-tokens.js
+
+note: when working on web3, remember to connect Ganache>>Deploy contracts(truffle compile, migrate)>>import the account from ganache to metamask
