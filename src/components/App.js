@@ -4,6 +4,7 @@ import Web3 from 'web3';
 
 import Navbar from './Navbar';
 import Main from './Main';
+import ParticleSettings from './ParticleSettings';
 import Tether from '../truffle_abis/Tether.json';
 import Kiri from '../truffle_abis/Kiri.json';
 import DecentralBank from '../truffle_abis/DecentralBank.json';
@@ -123,7 +124,11 @@ class App extends Component {
     {
       this.state.loading
         ? (content = (
-            <p id="loader" className="text-center" style={{ margin: '30px' }}>
+            <p
+              id="loader"
+              className="text-center"
+              style={{ margin: '30px', color: 'white' }}
+            >
               LOADING PLEASE..
             </p>
           ))
@@ -138,7 +143,10 @@ class App extends Component {
           ));
     }
     return (
-      <div>
+      <div className="app" style={{ position: 'relative' }}>
+        <div style={{ position: 'absolute' }}>
+          <ParticleSettings />
+        </div>
         <Navbar account={this.state.account} />
         <div className="container-fluid mt-5">
           <div className="row">
