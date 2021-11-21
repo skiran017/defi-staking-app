@@ -1,7 +1,9 @@
+/* eslint-disable no-lone-blocks */
 import React, { Component } from 'react';
 import Web3 from 'web3';
 
 import Navbar from './Navbar';
+import Main from './Main';
 import Tether from '../truffle_abis/Tether.json';
 import Kiri from '../truffle_abis/Kiri.json';
 import DecentralBank from '../truffle_abis/DecentralBank.json';
@@ -75,6 +77,34 @@ class App extends Component {
     this.setState({ loading: false });
   }
 
+  //Staking Function
+  stakeTokens = (amount) => {
+    this.setState({ loading: true });
+
+    this.state.tether.methods
+      .approve(this.state.decentralBank._address, amount)
+      .send({ from: this.state.account })
+      .on('transactionHash', (hash) => {
+        this.state.decentralBank.methods
+          .depositTokens(amount)
+          .send({ from: this.state.account })
+          .on('transactionHash', (hash) => {
+            this.setState({ loading: false });
+          });
+      });
+  };
+
+  //Unstake Function
+  unstakeTokens = () => {
+    this.setState({ loading: true });
+    this.state.decentralBank.methods
+      .unstakeTokens()
+      .send({ from: this.state.account })
+      .on('transactionHash', (hash) => {
+        this.setState({ loading: false });
+      });
+  };
+
   constructor(props) {
     super(props);
     this.state = {
@@ -89,9 +119,38 @@ class App extends Component {
     };
   }
   render() {
+    let content;
+    {
+      this.state.loading
+        ? (content = (
+            <p id="loader" className="text-center" style={{ margin: '30px' }}>
+              LOADING PLEASE..
+            </p>
+          ))
+        : (content = (
+            <Main
+              tetherBalance={this.state.tetherBalance}
+              rwdBalance={this.state.rwdBalance}
+              stakingBalance={this.state.stakingBalance}
+              stakeTokens={this.stakeTokens}
+              unstakeTokens={this.unstakeTokens}
+            />
+          ));
+    }
     return (
-      <div className="text-center">
+      <div>
         <Navbar account={this.state.account} />
+        <div className="container-fluid mt-5">
+          <div className="row">
+            <main
+              role="main"
+              className="col-lg-12 ml-auto mr-auto"
+              style={{ maxWidth: '600px', minHeight: '100vm' }}
+            >
+              <div>{content}</div>
+            </main>
+          </div>
+        </div>
       </div>
     );
   }
