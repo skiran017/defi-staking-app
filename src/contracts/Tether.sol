@@ -1,9 +1,9 @@
 pragma solidity ^0.5.0;
 
 contract Tether {
-    string public name = "Mock Tether token";
+    string public name = "Mock Tether Token";
     string public symbol = "mUSDT";
-    uint256 public totalSupply = 1000000000000000000000000; //1 million tokens
+    uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
     uint8 public decimals = 18;
 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
@@ -25,7 +25,7 @@ contract Tether {
         public
         returns (bool success)
     {
-        // check that the value is greater or equal for transfer
+        // require that the value is greater or equal for transfer
         require(balanceOf[msg.sender] >= _value);
         // transfer the amount and subtract the balance
         balanceOf[msg.sender] -= _value;
@@ -51,9 +51,9 @@ contract Tether {
     ) public returns (bool success) {
         require(_value <= balanceOf[_from]);
         require(_value <= allowance[_from][msg.sender]);
-        //add the blance for transerFrom
+        // add the balance for transferFrom
         balanceOf[_to] += _value;
-        // subtract  the balance for transerFrom
+        // subtract the balance for transferFrom
         balanceOf[_from] -= _value;
         allowance[msg.sender][_from] -= _value;
         emit Transfer(_from, _to, _value);
